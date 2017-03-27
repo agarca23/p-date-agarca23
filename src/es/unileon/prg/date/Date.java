@@ -34,9 +34,10 @@ public class Date{
 		return this._month==fecha.getMonth();
 	}
 
-	public String getMonthName(this.getMonth()){
+	public String getMonthName(Date fecha){
+		int	mes=this.getMonth();
 		StringBuffer month = new StringBuffer();
-		switch(month){
+		switch(mes){
 			case 1: month.append("Enero");
 				break;
 			case 2: month.append("Febrero");
@@ -61,33 +62,34 @@ public class Date{
 				break;
 			case 12: month.append("Diciembre");
 				break;
-			return toString();
+
 		}
+		return month.toString();
 	}
 
 
 	public int getDay() {
-		return day;
+		return this._day;
 	}
 
 	public void setDay(int day) {
-		this.day = day;
+		this._day = day;
 	}
 
 	public int getMonth() {
-		return month;
+		return this._month;
 	}
 
 	public void setMonth(int month) {
-		this.month = month;
+		this._month = month;
 	}
 
 	public int getYear() {
-		return year;
+		return this._year;
 	}
 
 	public void setYear(int year) {
-		this.year = year;
+		this._year = year;
 	}
 		
 }
