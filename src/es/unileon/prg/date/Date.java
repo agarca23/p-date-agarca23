@@ -194,14 +194,14 @@ public class Date{
 	}
 
 	public String dayOfWeek(String dia){
-
-		
+		String name="";
+		return name;
 	}
 
 
 	public String getDayName(){
 		int	dia=this.getDay();
-		String nombre;
+		String nombre="";
 		switch(dia){
 			case 1:
 				nombre="Lunes";
@@ -226,7 +226,7 @@ public class Date{
 				break;
 
 		}
-		return days;
+		return nombre;
 	}
 
 
